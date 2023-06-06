@@ -47,6 +47,10 @@ label {
     padding: 10px;
 }
 
+.product:hover {
+    cursor: pointer;
+}
+
 .product-image {
     text-align: center;
 }
