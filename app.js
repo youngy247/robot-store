@@ -33,8 +33,11 @@ app.get('/home', async (req, res) => {
     });
 
     const products = await connection.query('SELECT * FROM products;');
+    const categories = await connection.query('SELECT DISTINCT `category` FROM products;');
+    const characters = await connection.query('SELECT DISTINCT `character` FROM products;');
 
-    res.render('home', { products });
+
+    res.render('home', { products, categories, characters });
 });
 
 app.listen(port, () => {
