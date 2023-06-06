@@ -119,9 +119,15 @@ img {
     margin-right: 20px; /* Add some spacing between the image and the other content */
 }
 
+.close {
+    font-size: 2.4rem; /* Adjust the font size to make the close button bigger */
+    font-weight: bold;
+}
+
 .close:hover {
     cursor: pointer;
 }
+
 .modal-content h2,
 .modal-content p {
     flex: 1; /* Take up the remaining 50% of the width */
