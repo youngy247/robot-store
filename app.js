@@ -25,16 +25,16 @@ app.get('/test', (req, res) => {
     res.render('home', context);
 });
 
-app.get('/products', async (req, res) => {
+app.get('/home', async (req, res) => {
     const connection = await mysql.createConnection({
         user: 'root',
         password: 'password',
         database: 'robot_stores'
     });
 
-    const pigs = await connection.query('SELECT * FROM products;');
+    const products = await connection.query('SELECT * FROM products;');
 
-    res.json(pigs);
+    res.render('home', { products });
 });
 
 app.listen(port, () => {
