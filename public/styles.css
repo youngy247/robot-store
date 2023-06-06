@@ -1,4 +1,63 @@
 /* public/style.css */
+/* public/style.css */
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    display: inline-block;
+}
+
+.main-section {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-name {
+    margin-top: 5px;
+}
+
+.product-price {
+    margin-top: 5px;
+}
 
 .grid-container {
     display: grid;
