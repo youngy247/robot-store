@@ -1,7 +1,14 @@
 <!-- The following will be rendered into a given layout's {{{body}}} -->
 <div class="main-section">
     <h1>{{title}}</h1>
-    <div class="main-content">
-        {{content}}
+    <div class="grid-container">
+        {{#each products}}
+            <div class="product">
+<!--                <div class="product-id">{{this.id}}</div>-->
+                <div class="product-image"><img src="{{this.image}}"/></div>
+                <div class="product-name">{{this.title}}</div>
+                <div class="product-price">{{this.price}}</div>
+            </div>
+        {{/each}}
     </div>
 </div>
