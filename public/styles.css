@@ -11,6 +11,10 @@
     padding: 10px;
 }
 
+img {
+    height: 12rem;
+}
+
 .product-id {
     font-weight: bold;
 }
